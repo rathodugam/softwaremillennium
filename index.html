@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Millennium Software Solutions</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- favicon icon  -->
+    <link rel="icon" href="images/favicon.png" type="image/gif" sizes="16x16">
+
+    <!-- exterrnal style sheet  -->
+    <link rel="stylesheet" href="css/help.css">
+
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Frijole&display=swap" rel="stylesheet">
+
+    <!-- fa fa icon  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+        <!-- navigation  menu  -->
+        <nav class="navbar navbar-expand-md bg-nav navbar-dark">
+            <!-- Brand -->
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="" class="logo img-fluid">
+            </a>
+          
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About Us</a>
+                </li>
+               
+               &nbsp;&nbsp;&nbsp;
+                 <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                   Products
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Pathology</a>
+                        <a class="dropdown-item" href="#">Radiology</a>
+                        <a class="dropdown-item" href="#">Hospital Management</a>
+                        <a class="dropdown-item" href="#">physiotherapy</a>
+                        <a class="dropdown-item" href="#">Clinic Software</a>
+                        <a class="dropdown-item" href="#">Ophthalmologist</a>
+                        <a class="dropdown-item" href="#">Physician</a>
+                        
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Career</a>
+                  </li>
+                &nbsp;&nbsp;&nbsp;
+                <li>
+                    <button type="button" class="btn btn-outline-success" onclick="document.getElementById('signup').style.display='block'">SignUp</button>
+                    <button type="button" class="btn btn-outline-success" onclick="document.getElementById('login').style.display='block'" >Login</button>
+                   <!-- login form  -->
+                   <div id="login" class="modal">
+  
+                    <form class="modal-content animate" action="" method="post">
+                      <div class="imgcontainer">
+                        <span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</span>
+                        <img src="images/userlogin.png" alt="userlogin" class="user">
+                      </div>
+                  
+                      <div class="container login-container">
+                        <label for="uname"><b>Username</b></label>
+                        <input type="text" class="input" placeholder="Enter Username" name="uname" required>
+                  
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" class="input" placeholder="Enter Password" name="psw" required>
+
+                        <button type="submit" class="button">Login</button>
+                        <label>
+                          <input type="checkbox"  checked="checked" name="remember"> Remember me
+                        </label>
+                      </div>
+                  
+                      <div class="container login-container" style="background-color:#f1f1f1">
+                       
+                        <button type="button" onclick="document.getElementById('login').style.display='none'" class="cancelbtn">Cancel</button>
+                        <span class="psw">Forgot <a href="#">password?</a></span>
+                      </div>
+                    </form>
+                  </div>
+                      <!-- end login form  -->
+                      <!-- SignUp form  -->
+                      <div id="signup" class="modal">
+                        <form class="modal-content animate" action="">
+                          <div class="login-container">
+                        <span onclick="document.getElementById('signup').style.display='none'" class="close" title="Close Modal">&times;</span>
+                            <h1>Sign Up</h1>
+                            <p>Please fill in this form to create an account.</p>
+                            <hr>
+                            <label for="clinicname"><b>Enter Your Clinic Name</b></label>
+                            <input type="text" class="s-input" placeholder="Enter clinic name" name="clinicname" required>
+
+                            <label for="name"><b>Name</b></label>
+                            <input type="text" class="s-input" placeholder="Enter Your Full Name" name="name" required>
+
+                            <label for="email"><b>Email</b></label>
+                            <input type="text" class="s-input" placeholder="Enter Email" name="email" required>
+
+                            <label for="Phone"><b>Contact No</b></label>
+                            <input type="text" class="s-input" placeholder="Enter a phone number" name="phone" required>
+
+                            <label for="Username"><b>User Name</b></label>
+                            <input type="text" class="s-input" placeholder="Enter Username" name="username" required>
+                      
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" class="s-input" placeholder="Enter Password" name="psw" required>
+                      
+                            <label for="psw-repeat"><b>Repeat Password</b></label>
+                            <input type="password" class="s-input" placeholder="Repeat Password" name="psw-repeat" required>
+
+                            <label for="psw-repeat"><b>Select Software type</b></label>
+                            <select name="cars" id="software" class="input">
+                                <option value="0"></option>
+                                <option value="Pathology">Pathology</option>
+                                <option value="Radiology">Radiology</option>
+                                <option value="Hospital Management">Hospital Management</option>
+                                <option value="physiotherapy">physiotherapy</option>
+                                <option value="Clinic Software">Clinic Software</option>
+                                <option value="Ophthalmologist">Ophthalmologist</option>
+                                <option value="Physician">Physician</option>
+                              </select>
+                            
+                            <label>
+                              <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                            </label>
+                      
+                            <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+                      
+                            <div class="clearfix">
+                              <button type="button" onclick="document.getElementById('signup').style.display='none'" class="s-cancelbtn">Cancel</button>
+                              <button type="submit" class="s-button">Sign Up</button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                      
+                      <!-- end SignUp form  -->
+                </li>
+              </ul>
+            </div>
+          </nav>
+        <!-- end navigation menu  -->
+    <section class="main-background heading">
+        <h1>NEWMILLENNIUM <br> SOFTWARE SOLUTION</h1>
+        <p>We Specialize in Medical Line Software </p>
+        <p>Welcome to New Millennium Software Solutions. We are a team of like-minded and  determined individuals, <br>all sharing a vision for success based out of Surat, Gujarat. We have a an experience of more <br> than 20+ years. Would you like to find out more?</p>
+        <button type="button" class="btn btn-outline-success coustome-button">Get In Touch</button>
+    </section>
+    <!-- our story start -->
+    <section class="our-story">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="images/Our-story.png" alt="" class="img-fluid" width="500">
+                </div>
+                <div class="col-md-6 story">
+                    <p class="display-4">Our Story</p>
+                    <p>We’re experienced and talented team committed to serve the society through our skill set. We try to provide smart solutions for companies of all sizes and pride ourselves on our dedicated service.</p>
+                    <p>At New Millennium Software Solutions, we believe that the right skills with zeal to serve and support can lead companies towards a successful future.</p>
+                    <p>We always seek valuable feedback from our clients in order to learn and evolve. Contact us today to set up a meeting with one of our sales representatives or request a demo.</p>
+                    <br>
+                    <button type="button" class="btn btn-outline-success coustome-button1">Contect Us</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<!-- Pathology Software  -->
+    <section class="pathology-software">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="display-4">Pathology Software</p>
+                    <p>Smart solutions are at the core of all that we do at New Millennium Software Solution. Our pathology Software has </p>
+                    <ul>
+                        <li>Patient Registration</li>
+                        <li>Referring Doctors Details</li>
+                        <li>More than 200 Reports</li>
+                        <li>Abnormal findings appear in bold</li>
+                        <li>Billing </li>
+                        <li>Bar Code Generation</li>
+                        <li>Report can be sent on Email, SMS</li>
+                        <li>Various MIS Reports like Daily Collection, doctor wise details etc</li>
+                    </ul>
+                    <br>
+                    <button type="button" class="btn btn-outline-success coustome-button">Explore</button>
+                </div>
+                <div class="col-md-6">
+                    <img src="images/paathology-software.jpg" alt="" class="img-fluid" width="500">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Radiology software  -->
+    <section class="radiology-software">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="images/radiology-software.png" alt="" class="img-fluid" width="450">
+                    </div>
+                    <div class="col-md-6">
+                        <p class="display-4">Radiology Software</p>
+                        <p>Smart solutions are at the core of all that we do at New Millennium Software Solution. Our Radiology Software has </p>
+                        <ul>
+                            <li>Patient Registration</li>
+                            <li>In Built Pre-filled Editable Reports</li>
+                            <li>Billing </li>
+                            <li>Report can be sent on Email, SMS</li>
+                            <li>All reports are stored for future reference</li>
+                            <li>Various MIS Reports like Daily Collection, pending amount from patients etc</li>
+                        </ul>
+                        <br>
+                        <button type="button" class="btn btn-outline-success coustome-button1">Explore</button>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- Physiotherapy Software  -->
+        <section class="physiotherapy-software ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="display-4">Physiotherapy Software</p>
+                        <p>This software provides the following </p>
+                        <ul>
+                            <li>Patient Registration</li>
+                            <li>Appointment booking</li>
+                            <li>Packages available</li>
+                            <li>Clinical Management</li>
+                            <li>Attendance of patient</li>
+                            <li>Camp Campaigns</li>
+                            <li>Billing and Accountin</li>
+                            <li>Reminders to Patients </li>
+                            <li>MIS Reports</li>
+                        </ul>
+                        <br>
+                        <button type="button" class="btn btn-outline-success coustome-button">Explore</button>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="images/Physiotherapy-software.jpg" alt="" class="img-fluid" width="500">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- application  bot  -->
+        <section class="boat">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center">
+                        <img src="images/messanger.png" alt="" class="img-fluid" width="300">
+                    </div>
+                    <div class="col-md-6">
+                        <p class="display-4">Millennium Bot</p>
+                        <p>Digital assistant to help in all of your healthcare needs. <br>  Finding best doctor, booking appointment and checking <br> full medical history</p>
+                       <br>
+                        <ul>
+                            <li>Find best doctor</li>
+                            <li>Book appointment with doctors</li>
+                            <li>Check your full medical history</li>
+                            <li>Talk to it in your natural language Like 'I want to book an apptointment' or 'What was my BP yesterday' and Millennium will answer</li>
+                            <li>Tell Millennium about your health problems</li>
+                        </ul>
+                        <span class="bot-icon"><i class="fa fa-android" aria-hidden="true"></i> <i class="fa fa-apple" aria-hidden="true"></i></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- Our Satisfied Customers -->
+    <section class="ourcustomer">
+        <div class="container">
+            <p class="display-4">Our Satisfied Customers</p>
+            <p>Successful Collaborations with 100+ clients</p>
+            <div class="row ">
+                <div class="col-md-3 ">
+                    <img src="images/nirmal (1).webp" alt="" class="img-fluid">
+                    <p class="name-hospital">Nirmal Hospital</p>
+                </div>
+                <div class="col-md-3 ">
+                    <img src="images/rudra.webp" alt="" class="img-fluid">
+                    <p class="name-hospital">Rudra Eye Hospital</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="images/sahyog.webp" alt="" class="img-fluid">
+                    <p class="name-hospital">Sahyog Physiotherapy</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="images/malavia.webp" alt="" class="img-fluid">
+                    <p class="name-hospital">Malavia Hospita</p>
+                </div>
+                
+            </div>
+            <div class="row ">
+                <div class="col-md-3 ">
+                    <img src="images/sonal.webp" alt="" class="img-fluid">
+                    <p class="name-hospital">Sonal Hospital</p>
+                </div>
+                <div class="col-md-3 ">
+                    <img src="images/sarnath.webp" alt="" class="img-fluid">
+                    <p class="name-hospital">Sarnath Hospital</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="images/prannath.webp" alt="" class="img-fluid">
+                    <p class="name-hospital">Shree Prannath Hospital</p>
+                </div>
+                <div class="col-md-3">
+                    <!-- <img src="images/devang eye.webp" alt="" class="img-fluid">
+                    <p class="name-hospital">Dr. Devang's Eye Hospital</p> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Our Esteemed Pathology Labs  -->
+    <section class="labs">
+        <div class="container">
+            <p class="lab-heading">Our Esteemed Pathology Labs</p>
+            <div class="row name-list">
+                <div class="col-md-4">
+                    <h3>Naman Laboratory</h3>
+                    <p>(Dr. Indu Agrawal) <br>
+                    Center Point, Citylight, Surat</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Hardi Pathology</h3>
+                    <p>(Dr. Vaishali Shah) <br>
+                        Puna Jakatnaka, Surat</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Kruti Pathology</h3>
+                    <p>(Dr. Suman Lad) <br>
+                        Gyan Jyoti cinema, Udhana, Surat</p>
+                </div>
+            </div>
+            <div class="row name-list">
+                <div class="col-md-4">
+                    <h3>Shraddha Laboratory</h3>
+                    <p>(Dr. B. S. Mahagan) <br>
+                        Gyan Jyoti cinema, Udhana, Surat</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Priyanshu Lab</h3>
+                    <p>(Dr Amit Purohit) <br>
+                        Lalitpur U.P.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Parivar Pathology</h3>
+                    <p>Bharuch</p>
+                </div>
+            </div>
+            <div class="row name-list">
+                <div class="col-md-4">
+                    <h3>Iyer Loboratory</h3>
+                    <p>(Dr. Suresh Iyer)<br>
+                        Sargam Shopping Center, Surat</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Parth Pathology</h3>
+                    <p>(Dr. Shashikant) <br>
+                        Varachha Road, Surat</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Nidhi Pathology</h3>
+                    <p>(Dr. G. M. Kasodaria) <br>
+                        Near Railway Station, Surat</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- conact form  -->
+    <section class="contact-form">
+            <div class="container-fluid ">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="map-responsive map ">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238132.63727541058!2d72.68220805203599!3d21.159462704479317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04e59411d1563%3A0xfe4558290938b042!2sSurat%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1580205932449!5m2!1sen!2sin "></iframe>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="container contact-form ">
+                            <div class="contact-image ">
+                                <img src="https://image.ibb.co/kUagtU/rocket_contact.png " alt="rocket_contact " />
+                            </div>
+                            <form method="post ">
+                                <h3>Drop Us a Message</h3>
+                                <div class="row ">
+                                    <div class="col-md-6 ">
+                                        <div class="form-group ">
+                                            <input type="text " name="txtName " class="form-control " placeholder="Your Name * " />
+                                        </div>
+                                        <div class="form-group ">
+                                            <input type="text " name="txtEmail " class="form-control " placeholder="Your Email * " />
+                                        </div>
+                                        <div class="form-group ">
+                                            <input type="text " name="txtPhone " class="form-control " placeholder="Your Phone Number *" />
+                                        </div>
+                                       
+                                    </div>
+                                    <div class="col-md-6 ">
+                                        <div class="form-group ">
+                                            <textarea name="txtMsg " class="form-control " placeholder="Your Message * " style="width: 100%; height: 150px; "></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group ">
+                                        <button type="button" class="btn btn-outline-success coustome-button">Submit</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>        
+            </div>
+
+    </section>
+    <!-- footer  -->
+    <section class="footer">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="images/logo.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-md-3">
+                        <p>Contact No : +91  98251 45148</p>
+                        <p>Mail Id    : nmssinfotech@gmail.com</p>
+                    </div>
+                   
+                    <div class="col-md-3">
+                        <p>202, Jalaram Terrace, Near Nirmal Children Hospital Surat</p>
+                    </div>
+                    <div class="col-md-3">
+                        <ul>
+                            <li>pathology</li>
+                            <li>Radiology</li>
+                            <li>Physiotherapy</li>
+                        </ul>
+                    </div>
+                   
+                </div>
+            </div>
+        </footer>
+    </section>
+    <!-- end footer  -->
+    <!-- script  -->
+   
+      <script>
+        var modal = document.getElementById('signup');
+        
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+     </script><!-- end signup form  -->
+</body>
+</html>

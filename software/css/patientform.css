@@ -1,0 +1,128 @@
+.required-mark {
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .col-form-label {
+    width: 140px;
+  }
+  
+  .form-popup  {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+  
+  .form-container {
+    /* max-width: 300px; */
+    padding: 10px;
+    background-color: white;
+  }
+  
+  .form-container  {
+    width: 100%;
+    padding: 15px;
+    /* margin: 5px 0 22px 0; */
+    margin: 0px 136px 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  .form-container:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  .form-container .save {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  
+  .form-container .cancel {
+    background-color: red;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  } 
+  /* The popup form - hidden by default */
+  .commission-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+  
+  .commission-container {
+    /* max-width: 300px; */
+    padding: 10px;
+    background-color: white;
+  }
+  
+  .commission-container {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  .commission-container .save {
+    background-color: #4CAF50;
+    color: white;
+    padding: 7px 13px;
+    border: none;
+    cursor: pointer;
+    width: 36%;
+    margin-bottom: 2px;
+    opacity: 0.8;
+    border-radius: 5px;
+  }
+
+  .commission-container .cancel {
+    background-color: red;
+  }
+  
+  .commission-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+ 
+  
+  .submit {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 42px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    margin: 10px;
+    border-radius: 10px;
+  }
+  .clear {
+    background-color: red;
+    color: white;
+    padding: 16px 42px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    margin: 10px;
+    border-radius: 10px;
+  }
