@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Test Master</title>
+        <title>Charts - SB Admin</title>
         <link href="css/styles.css" rel="stylesheet" />
         <link rel="stylesheet" href="css/patientform.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js" crossorigin="anonymous"></script>
@@ -55,7 +55,6 @@
                                 <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                                 Clinic Master
                             </a>
-                            
                             <div class="sb-sidenav-menu-heading">Interface</div>
                             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
                                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
@@ -117,128 +116,136 @@
                 </nav>
             </div>
             <div id="layoutSidenav_content">
-                <main class="mt-5">
+                <main>
                     <div class="container-fluid">
-                        <h1 class="mb-4">Test Master</h1>
+                        <h1 class="mt-4">Clinic Master</h1>
                         <ol class="breadcrumb mb-4">
                             <li class="breadcrumb-item"><a href="dashboard.html">Dashboard</a></li>
-                            <li class="breadcrumb-item active">Test Master</li>
+                            <li class="breadcrumb-item active">Clinic Master</li>
                         </ol>
-                        <div class="row mb-3 ml-3">
-                            <label class="col-form-label">
-                                 <span class="form-label">Group Name</span>
-                            </label>
-                            <div class="col-sm-4">
-                                <input type="text" id="" class="form-control" />
-                            </div>
-                        </div>
-                        <div class="row mb-3 ml-3">
-                            <label class="col-form-label">
-                                <span class="form-label">Test Name</span>
-                            </label>
-                            <div class="col-sm-4">
-                                <input type="text" id="" class="form-control" />
-                            </div>
-                        </div>
-                        <div class="row mb-3 ml-3">
-                            <label class="col-form-label">
-                                <span class="form-label">Study Name</span>
-                            </label>
-                            <div class="col-sm-4">
-                                <input type="text" id="" class="form-control" />
-                            </div>
-                        </div>
-                        <div class="row mb-3 ml-3">
-                            <label class="col-form-label">
-                                <span class="form-label">Charges</span>
-                            </label>
-                            <div class="col-sm-2">
-                                <input type="number" id="" class="form-control" />
-                            </div>
-                        </div>
-                        <div class="row mb-3 ml-3">
-                            <label class="col-form-label">
-                                <span class="form-label">File Path</span>
-                            </label>
-                            <div class="col-sm-7">
-                                <input type="number" id="" class="form-control" />
-                            </div>
-                            <div class="col-sm-3">
-                                <form>
-                                    <div class="form-group">
-                                      <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                        <div>
+                                <h3 class="text-center">Clinic Name</h3>
+                                <div class="row mb-3 ml-3">
+                                    <label class="col-form-label">
+                                        <span class="form-label">Sr. No.</span>
+                                    </label>
+                                    <div class="col-sm-2">
+                                        <input type="number" id="" class="form-control" />
                                     </div>
-                                </form>
+                                </div>
+
+                                <div class="row mb-3 ml-3">
+                                    <label class="col-form-label">
+                                        <span class="form-label">Clinic Name</span>
+                                    </label>
+                                    <div class="col-sm-4">
+                                        <input type="text" id="" class="form-control" />
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3 ml-3">
+                                    <label class="col-form-label">
+                                        <span class="form-label">Clinic Massage</span>
+                                    </label>
+                                    <div class="col-sm-8">
+                                        <input type="text" id="" class="form-control" />
+                                    </div>
+                                </div>
+                        </div>
+
+                        <div class="row mb-3 ml-3">
+                            <label class="col-form-label">
+                                 <span class="form-label">Address</span>
+                            </label>
+                            <div class="col-sm-4">
+                                <textarea rows="4" cols="50" class="form-control" name="comment" ></textarea>
+                            </div>
+                            <label class="col-form-label">
+                                <span class="form-label">Phathology Dr. Name</span>
+                           </label>
+                           <div class="col-sm-4">
+                                <input type="text" id="" class="form-control" />
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-sm-12 mt-4">
+
+                        <div class="row mb-3 ml-3">
+                            <label class="col-form-label">
+                                <span class="form-label">Clinic Massage</span>
+                            </label>
+                            <div class="col-sm-4">
+                                <input type="email" id="" class="form-control" />
+                            </div>
+                            <label class="col-form-label">
+                                <span class="form-label">Password</span>
+                            </label>
+                            <div class="col-sm-4">
+                                <input type="password" id="" class="form-control" />
+                            </div>
+                        </div>
+
+                        <div class="row mb-3 ml-3">
+                            <label class="col-form-label">
+                                <span class="form-label">State</span>
+                            </label>
+                            <div class="col-sm-4">
+                                <input type="text" id="" class="form-control" />
+                            </div>
+                            <label class="col-form-label">
+                                <span class="form-label">Phone Nuber</span>
+                            </label>
+                            <div class="col-sm-4">
+                                <input type="number" id="" class="form-control" />
+                            </div>
+                        </div>
+                             <!-- table  -->
+                            <div class="row">
+                                <div class="col-sm-10 mt-4 ml-5">
                                 <div class="table-responsive">
-                                    <table class="table  table-bordered text-center" width="100%" cellspacing="0">
-                                        <thead>
-                                            <tr>
-                                            <th>Sr No.</th>
-                                            <th>Group Name</th>
-                                            <th >Test Name</th>
-                                            <th>Study Name</th>
-                                            <th>Charges</th>
-                                            <th>File Path</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            </tr>
-                                            <tr>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            </tr>
-                                            <tr>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            </tr>
-                                            <tr>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            </tr>
-                                            <tr>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            </tr>
-                                        
-                                        </tbody>
-                                        </table>
-                                 </div>
+                                <table class="table table-bordered text-center" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                        <th class="srno">Sr. No.</th>
+                                        <th>Clinic Name</th>
+                                        <th >Short Clinic Name</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        </tr>
+                                        <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        </tr>
+                                        <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        </tr>
+                                        <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        </tr>
+                                        <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        </tr>
+                                    
+                                    </tbody>
+                                    </table>
+                                </div>
+                                </div>
                             </div>
-                        </div>
-                        
-                        <div class="row">
-                            <div class="save-report">
-                                <a href="newPatientform.html"><button type="button" class="btn btn-primary">Save</button> </a>
-                                     <button type="button" class="btn btn-secondary">Edit</button>
-                                <a href="dashboard.html">   <button type="button" class="btn btn-danger">Close</button></a>
-                            </div>
+                        <div class="row clinic-master">
+                            <button type="button" class="btn btn-primary">NEW</button>
+                            <button type="button" class="btn btn-secondary">EDIT</button>
+                            <button type="button" class="btn btn-warning">DELET</button>
+                            <button type="button" class="btn btn-danger">EXIT</button>
                         </div>
                     </div>
                 </main>

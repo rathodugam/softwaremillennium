@@ -26,7 +26,7 @@
     width: 100%;
     padding: 15px;
     /* margin: 5px 0 22px 0; */
-    margin: 0px 136px 22px 0;
+    margin: 0px 136px 0px 0;
     border: none;
     background: #f1f1f1;
   }
@@ -126,3 +126,30 @@
     margin: 10px;
     border-radius: 10px;
   }
+  .save-report {
+    text-align: center;
+    margin: 50px;
+    width: 100%;
+    clear: both;
+  }
+  .save-report button {
+    padding: 10px 40px;
+  }
+  .testmaster-button {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem !important;
+  }
+.srno {
+  width: 100px;
+}
+.clinic-master{
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem !important;
+}
+.clinic-master button {
+  margin: 10px;
+  padding: 10px 40px;
+  font-weight: bold;
+}

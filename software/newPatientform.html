@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Static Navigation - SB Admin</title>
+        <title>New Patient Form</title>
         <link href="css/styles.css" rel="stylesheet" />
         <link rel="stylesheet" href="css/patientform.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js" crossorigin="anonymous"></script>
@@ -48,6 +48,10 @@
                                 Dashboard
                             </a>
                             <a class="nav-link" href="testmaster.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                                Test Master
+                            </a>
+                            <a class="nav-link" href="clinicmaster.html">
                                 <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                                 Test Master
                             </a>
@@ -113,7 +117,8 @@
             </div>
             <div id="layoutSidenav_content">
                 <main class="mt-5">
-                    <div class="container-fluid">
+                    <form id="myForm">
+                    <div class="container-fluid">  
                         <div class="row mb-3 ml-3">
                             <label class="col-form-label">
                             <span class="form-label">Doctore Name</span>
@@ -163,8 +168,7 @@
                             </div>
                             <div class="col-sm-2 mb-2 ml-4">
                                 <input type="radio" class="form-check-input" id="radio2" name="optradio" value=""> Female
-                            </div>
-                           
+                            </div> 
                         </div>
                         <div class="row mb-3 ml-3 ">
                             <label class="col-form-label">
@@ -177,7 +181,6 @@
                             <div class="col-sm-3 mb-2">
                                 <input type="number" id="" class="form-control" placeholder="Year" />
                             </div>
-                           
                         </div>
                        
                         <div class="row mb-3 ml-3 ">
@@ -191,8 +194,7 @@
                             <div class="col-sm-3 mb-2">
                                 <button type="button" class="btn btn-primary open-button"  onclick="opendr()"> <i class="fa fa-plus" aria-hidden="true"></i> </button>
                                 <div class="form-popup" id="addr">
-                                    
-                                    <form class="form-container">
+                                    <section class="form-container">
                                       <h3>Add New Doctore</h3>
                                       <div class="input-group mb-3">
                                         <div class="input-group-prepend">
@@ -226,10 +228,10 @@
                                      <button type="button" class="btn btn-primary mb-3" onclick="openFormcommission()"> <i class="fa fa-plus" aria-hidden="true"></i> Add  </button> 
                                         <button type="submit" class="btn save">Save</button>
                                       <button type="button" class="btn cancel" onclick="closedr()">Close</button>
-                                    </form>
-                                  </div>
+                                    </section>
+                                </div>
                                   <!-- commision popup  -->
-                                  <div class="commission-popup" id="myForm">
+                                  <div class="commission-popup" id="popup">
                                     <section  class="commission-container">
                                   
                                         <div class="row mb-3 ml-3">
@@ -334,7 +336,7 @@
                             </div>
                         </div>
                       <div class="row  text-center">
-                          <div class="col-sm-6">
+                          <div class="col-sm-5">
                             <label> Test Name</label>
                             <input type="text" id="" class="form-control" placeholder="Enter Test Name" />
                           </div>
@@ -346,15 +348,17 @@
                             <label> Discount</label>
                             <input type="number" id="" class="form-control" placeholder="10%" />
                           </div>
-                          <div class="col-sm-2">
-                            <a href="testmaster.html">
-                            <button type="button" class="btn btn-primary mt-2"> <i class="fa fa-plus" aria-hidden="true"></i> Add  </button> </a>
+                          <div class="col-sm-3 testmaster-button">
+                           
+                            <button type="button" class="btn btn-primary mt-2"> <i class="fa fa-plus" aria-hidden="true"></i> Add  </button> 
+                            <a href="testmaster.html">   <button type="button" class="btn btn-primary mt-2"> <i class="fa fa-plus" aria-hidden="true"></i> Test master  </button></a>
                           </div>
                       </div>
 
                       <div class="row">
                           <div class="col-sm-10 mt-4">
-                            <table class="table table-bordered text-center">
+                            <div class="table-responsive">
+                            <table class="table table-bordered text-center" width="100%" cellspacing="0">
                                 <thead>
                                   <tr>
                                     <th class="col-3">Test Nme</th>
@@ -391,6 +395,7 @@
                                  
                                 </tbody>
                               </table>
+                            </div>
                           </div>
                       </div>
 
@@ -457,13 +462,14 @@
 
                     <div class="row mb-4 ml-3 ">
                        <div>
-                        <button type="submit" class="btn submit">Save</button>
-                        <button type="button" class="btn clear">Clear</button>
+                      <a href="dashboard.html">  <button type="submit" class="btn submit">Save</button></a>
+                        <button type="button" class="btn clear" onclick="myFunction()" value="Reset form">Clear</button>
                        </div>
                         
                     </div>
 
                     </div>
+                </form>
                 </main>
                 <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid">
@@ -493,12 +499,17 @@
             </script>
             <script>
                 function openFormcommission() {
-                  document.getElementById("myForm").style.display = "block";
+                  document.getElementById("popup").style.display = "block";
                 }
                 
                 function closeForm() {
-                  document.getElementById("myForm").style.display = "none";
+                  document.getElementById("popup").style.display = "none";
                 }
-                </script>
+         </script>
+         <script>
+            function myFunction() {
+              document.getElementById("myForm").reset();
+            }
+            </script>
     </body>
 </html>
